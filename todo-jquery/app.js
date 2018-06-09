@@ -1,5 +1,7 @@
 $(function() {
   $("input[type='button']").on("click", function () {
-    $("<li>" + $("input[type='text']").val() + "</li>").appendTo("ul");
+    var text = $("input[type='text']").val();
+
+    $("<li>").text(text).appendTo("ul");
   });
 });
